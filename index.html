@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio da Cantina</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: white;
+            color: black;
+            text-align: center;
+            padding: 2rem 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 500;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            overflow-x: auto; /* Para scroll horizontal em mobile */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #e9ecef;
+        }
+        th {
+            background-color: black;
+            color: white;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        td ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        td li {
+            padding: 0.25rem 0;
+        }
+        @media (max-width: 768px) {
+            th, td {
+                padding: 0.5rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cardápio da Cantina</h1>
+    </header>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Categoria</th>
+                    <th>Segunda-feira<br>01/12/2025</th>
+                    <th>Terça-feira<br>02/12/2025</th>
+                    <th>Quarta-feira<br>03/12/2025</th>
+                    <th>Quinta-feira<br>04/12/2025</th>
+                    <th>Sexta-feira<br>05/12/2025</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Arroz</strong></td>
+                    <td>
+                        <ul>
+                            <li>ARROZ INTEGRAL</li>
+                            <li>ARROZ BRANCO</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>ARROZ COM BACON</li>
+                            <li>ARROZ BRANCO</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>ARROZ INTEGRAL COM ESPINAFRE</li>
+                            <li>ARROZ BRANCO</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>ARROZ BRANCO</li>
+                            <li>ARROZ COM CHEIRO VERDE</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>ARROZ INTEGRAL</li>
+                            <li>ARROZ BRANCO</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Acompanhamento</strong></td>
+                    <td>
+                        <ul>
+                            <li>FEIJÃO PRETO</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>FEIJÃO CARIOCA</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>FEIJÃO BATIDO COM CHEIRO VERDE</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>FEIJÃO CARIOCA</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>FEIJÃO TROPEIRO</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Guarnição</strong></td>
+                    <td>
+                        <ul>
+                            <li>MACARRÃO ALHO E ÓLEO</li>
+                            <li>BERINJELA ASSADA</li>
+                            <li>MOSTARDA</li>
+                            <li>CENOURA PALITO</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>BRÓCOLIS COM COUVE-FLOR E CENOURA</li>
+                            <li>BATATA CHIPS</li>
+                            <li>ALMEIRÃO REFOGADO</li>
+                            <li>CHUCHU REFOGADO</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>TORRESMO</li>
+                            <li>COUVE RASGADA COM ALHO</li>
+                            <li>PURÊ DE BATATA</li>
+                            <li>ANÉIS DE CEBOLA</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>ANGÚ</li>
+                            <li>ALMEIRÃO REFOGADO</li>
+                            <li>MACARRÃO À BOLONHESA</li>
+                            <li>ABOBRINHA REFOGADA</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>LEGUMES ASSADOS NO AZEITE</li>
+                            <li>REPOLHO REFOGADO</li>
+                            <li>FAROFA COM BACON NA MANTEIGA</li>
+                            <li>COUVE REFOGADA</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Proteína</strong></td>
+                    <td>
+                        <ul>
+                            <li>BIFE DE PERNIL ACEBOLADO</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>BIFE DE FRANGO GRELHADO COM CEBOLA</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>FRANGO XADREZ</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>CARNE MOÍDA</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>ISCA DE PERNIL ACEBOLADO</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Salada</strong></td>
+                    <td>
+                        <ul>
+                            <li>BETERRABA EM FIOS</li>
+                            <li>REPOLHO COM CEBOLINHA</li>
+                            <li>ALFACE</li>
+                            <li>TOMATE</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>RÚCULA COM TOMATE E MILHO</li>
+                            <li>FEIJÃO FRADINHO</li>
+                            <li>ALFACE</li>
+                            <li>TOMATE</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>CENOURA COZIDA</li>
+                            <li>MIX DE FOLHAS COM ABACAXI</li>
+                            <li>BETERRABA RALADA</li>
+                            <li>COUVE COM TOMATE</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>ALFACE</li>
+                            <li>TOMATE</li>
+                            <li>LARANJA EM RODELAS</li>
+                            <li>ALFACE</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>TOMATE</li>
+                            <li>TABULE</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
