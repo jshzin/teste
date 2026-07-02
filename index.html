@@ -1,268 +1,158 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cardápio da Cantina</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f9fa;
-            color: #333;
-            line-height: 1.6;
-        }
-        header {
-            background-color: white;
-            color: black;
-            text-align: center;
-            padding: 2rem 1rem;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-            font-weight: 500;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-            overflow-x: auto; /* Para scroll horizontal em mobile */
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            background-color: white;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            border-radius: 10px;
-            overflow: hidden;
-        }
-        th, td {
-            padding: 1rem;
-            text-align: left;
-            border-bottom: 1px solid #e9ecef;
-        }
-        th {
-            background-color: black;
-            color: white;
-            font-weight: 500;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        tr:nth-child(even) {
-            background-color: #f8f9fa;
-        }
-        td ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        td li {
-            padding: 0.25rem 0;
-        }
-        @media (max-width: 768px) {
-            th, td {
-                padding: 0.5rem;
-                font-size: 0.9rem;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light" />
+  <meta name="theme-color" content="#f7f5f0" />
+  <title>IFMG Campus Betim-2026 — Da Visão à Cosmovisão</title>
+  <meta name="description" content="Exposição de instalações artísticas desenvolvidas por estudantes do IFMG · Campus Betim. Arte, território e memória dos povos originários." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=Inter:wght@400;500&family=Geist+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Cardápio da Cantina</h1>
-    </header>
-    <div class="container">
-        <table>
-            <thead>
-                <tr>
-                    <th>Categoria</th>
-                    <th>Segunda-feira<br>01/12/2025</th>
-                    <th>Terça-feira<br>02/12/2025</th>
-                    <th>Quarta-feira<br>03/12/2025</th>
-                    <th>Quinta-feira<br>04/12/2025</th>
-                    <th>Sexta-feira<br>05/12/2025</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>Arroz</strong></td>
-                    <td>
-                        <ul>
-                            <li>ARROZ INTEGRAL</li>
-                            <li>ARROZ BRANCO</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>ARROZ COM BACON</li>
-                            <li>ARROZ BRANCO</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>ARROZ INTEGRAL COM ESPINAFRE</li>
-                            <li>ARROZ BRANCO</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>ARROZ BRANCO</li>
-                            <li>ARROZ COM CHEIRO VERDE</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>ARROZ INTEGRAL</li>
-                            <li>ARROZ BRANCO</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td><strong>Acompanhamento</strong></td>
-                    <td>
-                        <ul>
-                            <li>FEIJÃO PRETO</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>FEIJÃO CARIOCA</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>FEIJÃO BATIDO COM CHEIRO VERDE</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>FEIJÃO CARIOCA</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>FEIJÃO TROPEIRO</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td><strong>Guarnição</strong></td>
-                    <td>
-                        <ul>
-                            <li>MACARRÃO ALHO E ÓLEO</li>
-                            <li>BERINJELA ASSADA</li>
-                            <li>MOSTARDA</li>
-                            <li>CENOURA PALITO</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>BRÓCOLIS COM COUVE-FLOR E CENOURA</li>
-                            <li>BATATA CHIPS</li>
-                            <li>ALMEIRÃO REFOGADO</li>
-                            <li>CHUCHU REFOGADO</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>TORRESMO</li>
-                            <li>COUVE RASGADA COM ALHO</li>
-                            <li>PURÊ DE BATATA</li>
-                            <li>ANÉIS DE CEBOLA</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>ANGÚ</li>
-                            <li>ALMEIRÃO REFOGADO</li>
-                            <li>MACARRÃO À BOLONHESA</li>
-                            <li>ABOBRINHA REFOGADA</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>LEGUMES ASSADOS NO AZEITE</li>
-                            <li>REPOLHO REFOGADO</li>
-                            <li>FAROFA COM BACON NA MANTEIGA</li>
-                            <li>COUVE REFOGADA</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td><strong>Proteína</strong></td>
-                    <td>
-                        <ul>
-                            <li>BIFE DE PERNIL ACEBOLADO</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>BIFE DE FRANGO GRELHADO COM CEBOLA</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>FRANGO XADREZ</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>CARNE MOÍDA</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>ISCA DE PERNIL ACEBOLADO</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td><strong>Salada</strong></td>
-                    <td>
-                        <ul>
-                            <li>BETERRABA EM FIOS</li>
-                            <li>REPOLHO COM CEBOLINHA</li>
-                            <li>ALFACE</li>
-                            <li>TOMATE</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>RÚCULA COM TOMATE E MILHO</li>
-                            <li>FEIJÃO FRADINHO</li>
-                            <li>ALFACE</li>
-                            <li>TOMATE</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>CENOURA COZIDA</li>
-                            <li>MIX DE FOLHAS COM ABACAXI</li>
-                            <li>BETERRABA RALADA</li>
-                            <li>COUVE COM TOMATE</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>ALFACE</li>
-                            <li>TOMATE</li>
-                            <li>LARANJA EM RODELAS</li>
-                            <li>ALFACE</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>TOMATE</li>
-                            <li>TABULE</li>
-                        </ul>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+
+  
+  <div class="indigena-bg" aria-hidden="true" id="indigena-bg"></div>
+
+  
+  <header id="site-header">
+    <div class="header-inner">
+      <a href="#topo" class="logo-link" aria-label="Início — IFMG Campus Betim-2026">
+        <span class="logo-title">IFMG Campus Betim-2026</span>
+        <span class="logo-year">2026</span>
+      </a>
+      <nav aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li><a href="#exposicao" class="nav-link">A Exposição</a></li>
+          <li><a href="#obras" class="nav-link">Obras</a></li>
+          <li><a href="#galeria" class="nav-link">Galeria</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
+
+  <main>
+
+   
+    <section id="topo" class="hero">
+      <div class="hero-content animate-fade-in-up">
+        <p class="eyebrow">Instalações IFMG · 2026</p>
+        <h1 class="hero-title">Da Visão à Cosmovisão</h1>
+        <div class="rule-gold" aria-hidden="true"></div>
+        <p class="hero-subtitle">
+          Exposição de instalações artísticas desenvolvidas por estudantes do IFMG — Campus Betim.
+        </p>
+        <a href="#exposicao" class="hero-cta">
+          Entrar na exposição
+          <span aria-hidden="true" class="hero-cta-line"></span>
+        </a>
+      </div>
+      <div class="hero-strip">
+        <div class="hero-slideshow" id="hero-slideshow">
+      
+        </div>
+        <div class="hero-slide-label" id="hero-slide-label"></div>
+      </div>
+    </section>
+
+ 
+    <section id="exposicao" class="curatorial">
+      <div class="curatorial-grid">
+        <div class="reveal curatorial-left">
+          <p class="eyebrow">Texto curatorial</p>
+          <h2 class="curatorial-title">Da visão à cosmovisão</h2>
+          <div class="curatorial-quote-block">
+            <p class="curatorial-quote">
+              Um convite para olhar a terra não como recurso, mas como corpo, história e existência.
+            </p>
+          </div>
+        </div>
+
+        <div class="reveal curatorial-right" data-delay="120">
+          <div class="curatorial-paragraphs">
+            <p>Esta exposição nasce do encontro entre arte, território e escuta. Inspirados pelas produções de artistas indígenas contemporâneos como Glicéria Tupinambá, Olinda Tupinambá e Ziel Karapotó, estudantes do Ensino Médio Integrado do IFMG – Campus Betim transformaram o espaço escolar em território de memória, denúncia e resistência.</p>
+            <p>As instalações aqui apresentadas não pretendem apenas representar questões indígenas, mas provocar experiências sensoriais e reflexivas sobre aquilo que historicamente foi silenciado: o apagamento das culturas originárias, a violência colonial, a destruição ambiental e a disputa permanente pelos territórios e pelas narrativas.</p>
+            <p>Ao ocupar corredores, jardins, árvores, pedras, terra e espaços de passagem do campus, as obras convidam o público a desacelerar o olhar e perceber o corpo em relação com o ambiente. O território deixa de ser apenas cenário e passa a operar como matéria viva da experiência artística.</p>
+            <p>Mais do que respostas, as obras apresentam perguntas: Quem tem o direito de contar a história? O que significa preservar um território? O que permanece vivo mesmo após séculos de violência? Como ouvir aquilo que foi sistematicamente silenciado?</p>
+          </div>
+          <div class="curatorial-author">
+            <p class="author-name">Prof. Tiago Cruvinel — site feito por João Pedro Moraes 1 Aut T2 (@joaomrsl)</p>
+            <p class="author-role">Disciplina de Artes — IFMG Campus Betim</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="obras" class="obras-header">
+      <div class="reveal obras-header-inner">
+        <p class="eyebrow">As instalações</p>
+        <h2 class="section-title">Obras em exposição</h2>
+        <div class="rule-gold rule-centered" aria-hidden="true"></div>
+        <p class="section-subtitle">
+          Doze instalações criadas a partir das poéticas de artistas indígenas contemporâneos. Cada obra propõe uma experiência sensorial sobre território, memória e resistência.
+        </p>
+      </div>
+    </section>
+
+    <div id="artworks-container"></div>
+
+
+    <section id="galeria" class="gallery-section">
+      <div class="reveal gallery-header">
+        <p class="eyebrow">Acervo visual</p>
+        <h2 class="section-title">Galeria</h2>
+        <div class="rule-gold rule-centered" aria-hidden="true"></div>
+        <p class="section-subtitle">
+          Registros das instalações que ocuparam corredores, jardins e espaços de passagem do campus. Clique em uma imagem para ampliá-la.
+        </p>
+      </div>
+      <div class="gallery-masonry" id="gallery-grid"></div>
+    </section>
+
+  </main>
+
+ 
+  <footer id="site-footer">
+    <p>Mensagem de Olinda Tupinambá:</p>
+    <img src="obras/olinda-email/olindaemail.png" alt="Email de Olinda Tupinambá" class="footer-email">
+    <div class="rule-gold rule-centered" aria-hidden="true" style="width:4rem;margin-bottom:1.5rem;"></div>
+    <p class="footer-title">Instituto Federal de Minas Gerais — IFMG</p>
+    <p class="footer-campus">Campus Betim · 2026</p>
+    <p class="footer-desc">
+      Exposição de instalações artísticas desenvolvidas por estudantes do Ensino Médio Integrado. Curadoria e orientação artística de Prof. Tiago Cruvinel.
+    </p>
+    <p>
+      Qualquer incoerência em relação às informações da exposição, por favor, entre em contato com o Prof. Tiago Cruvinel.
+    </p>
+  </footer>
+
+
+  <div id="lightbox" role="dialog" aria-modal="true" aria-label="Visualização ampliada da imagem" hidden>
+    <div class="lb-top">
+      <span class="lb-counter" id="lb-counter"></span>
+      <button class="lb-close" id="lb-close" aria-label="Fechar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="lb-body">
+      <button class="lb-nav lb-prev" id="lb-prev" aria-label="Imagem anterior">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <figure class="lb-figure">
+        <img src="" alt="" class="lb-img" id="lb-img" />
+        <figcaption class="lb-caption" id="lb-caption"></figcaption>
+      </figure>
+      <button class="lb-nav lb-next" id="lb-next" aria-label="Próxima imagem">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <script src="artworks.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
